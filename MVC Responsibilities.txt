@@ -1,0 +1,24 @@
+
+
+MVC Responsibilities 
+
+Models
+• Store the data for the application (e.g., tasks, categories, reminders).
+• Define what a task looks like (title, description, due date, etc.).
+• Handle saving and loading data through the file system.
+• Contain the rules for how tasks behave (e.g., marking complete).
+
+
+Views
+• Show information to the user (task list, task details, forms).
+• Collect user input (new task details, edits, delete confirmations).
+• Display messages such as errors or success notifications.
+• Never handle data storage or business logic.
+
+
+Controllers
+• Receive actions from the user (create, read, update, delete).
+• Validate and process user input.
+• Tell the model to save, load, or update data.
+• Send results back to the view so the UI can update.
+• Act as the link between the view and the model.
